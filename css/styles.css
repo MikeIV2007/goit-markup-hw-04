@@ -330,63 +330,72 @@ header {
     margin-bottom: 24px;
 }
 
-
 .features-list .item::before {
-    /* display: inline-block; */
     display: block;
     content: '';
-    /* width: 264px; */
     height: 112px;
-    gap: 0px;
     border-radius: 4px;
-    opacity: 0px;
-    background-color: rgba(244, 244, 253, 1);
-
-
-    /* background-image: url(../images/antenna_1.png);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: 64px, 64px; */ */
-
-
-    /* ** */
-    /* outline: 2px solid rebeccapurple; */
-}
-
-/* .features-list .item .icon-antenna::before {
-    background-image: url(../images/antenna_1.png);
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: 64px, 64px;
-} */
-
-.features-list .item:nth-child(1)::before {
-    background-image: url(../images/antenna_1.png);
+    background-color: rgba(244, 244, 253, 1); 
     background-repeat: no-repeat;
     background-position: center;
     background-size: 64px, 64px;
 }
 
-.features-list .item:nth-child(2)::before {
+.item.icon-antenna::before {
+    background-image: url(../images/antenna_1.png);
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-size: 64px, 64px; */
+}
+
+/* .features-list .item:nth-child(1)::before {
+    background-image: url(../images/antenna_1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 64px, 64px;
+} */
+
+.item.icon-clock::before {
+    background-image: url(../images/clock_1.png);
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-size: 64px, 64px; */
+}
+
+/* .features-list .item:nth-child(2)::before {
     background-image: url(../images/clock_1.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 64px, 64px;
+} */
+
+.item.icon-diagram::before {
+    background-image: url(../images/diagram_1.png);
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-size: 64px, 64px; */
 }
 
-.features-list .item:nth-child(3)::before {
+/* .features-list .item:nth-child(3)::before {
     background-image: url(../images/diagram_1.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 64px, 64px;
+} */
+
+.item.icon-astronaut::before {
+    background-image: url(../images/astronaut_1.png);
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-size: 64px, 64px; */
 }
 
-.features-list .item:nth-child(4)::before {
+/* .features-list .item:nth-child(4)::before {
     background-image: url(../images/astronaut_1.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 64px, 64px;
-}
+} */
 
 /* for n element in the row */
 .features-list .item:nth-child(4n) {
