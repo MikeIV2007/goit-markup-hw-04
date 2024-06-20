@@ -235,15 +235,44 @@ header {
 }
 
 /* Main */
+
 /* Hero 1 */
 .hero {
+    display: block;
+    max-width: 1440px;
+    min-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: var(--title-text-color);
     text-align: center;
 }
 
+.overlay {
+    max-width: 1440px;
+    min-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../images/people_office_01.png);
+
+    background-color: var(--title-text-color);
+
+}
+
+/* 
 .hero-title {
-    margin-top: 0;
-    margin-bottom: 48px;
+    width: 496px;
+    height: 120px;
+    top: 260px;
+    left: 472px;
+    gap: 0px;
+    opacity: 0px;
     color: var(--primery-white-color);
 
     font-size: 56px;
@@ -251,7 +280,22 @@ header {
     line-height: 1.07;
 
     letter-spacing: 0.02em;
+} */
+
+.overlay-title {
+    width: 496px;
+    padding-top: 188px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--primery-white-color);
+    text-align: inherit;
+
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.07;
 }
+
 
 /* Sections */
 .section {
@@ -284,6 +328,64 @@ header {
     width: calc((100% - 72px) / 4);
     margin-right: 24px;
     margin-bottom: 24px;
+}
+
+
+.features-list .item::before {
+    /* display: inline-block; */
+    display: block;
+    content: '';
+    /* width: 264px; */
+    height: 112px;
+    gap: 0px;
+    border-radius: 4px;
+    opacity: 0px;
+    background-color: rgba(244, 244, 253, 1);
+
+
+    /* background-image: url(../images/antenna_1.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 64px, 64px; */ */
+
+
+    /* ** */
+    /* outline: 2px solid rebeccapurple; */
+}
+
+/* .features-list .item .icon-antenna::before {
+    background-image: url(../images/antenna_1.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 64px, 64px;
+} */
+
+.features-list .item:nth-child(1)::before {
+    background-image: url(../images/antenna_1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 64px, 64px;
+}
+
+.features-list .item:nth-child(2)::before {
+    background-image: url(../images/clock_1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 64px, 64px;
+}
+
+.features-list .item:nth-child(3)::before {
+    background-image: url(../images/diagram_1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 64px, 64px;
+}
+
+.features-list .item:nth-child(4)::before {
+    background-image: url(../images/astronaut_1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 64px, 64px;
 }
 
 /* for n element in the row */
