@@ -101,7 +101,10 @@ button.primary:focus {
 /*  Header */
 
 header {
-    border-bottom: 1px solid #E7E9FC
+    max-width: 1440px;
+    border-bottom: 1px solid #E7E9FC;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .container.nav {
@@ -299,8 +302,11 @@ header {
 
 /* Sections */
 .section {
+    max-width: 1440px;
     padding-top: 0px;
     padding-bottom: 120px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .section-title {
@@ -335,7 +341,7 @@ header {
     content: '';
     height: 112px;
     border-radius: 4px;
-    background-color: rgba(244, 244, 253, 1); 
+    background-color: rgba(244, 244, 253, 1);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 64px, 64px;
@@ -448,6 +454,7 @@ header {
 .section.profile {
     background-color: #F4F4FD;
     padding-top: 120px;
+    margin-bottom: 120px;
 }
 
 .profile-img {
@@ -467,6 +474,7 @@ header {
 }
 
 .profile-list .content {
+    width: 232px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 32px;
@@ -475,6 +483,59 @@ header {
 .profile-list .title,
 .profile-list .text {
     text-align: center;
+    margin-bottom: 8px;
+}
+
+.social-links {
+    width: inherit;
+    min-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.social-links .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(77, 90, 229, 1);
+    border-radius: 50%;
+}
+
+.social-links .icon .svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* Customers */
+.customers-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.customers-list .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 168px;
+    height: 88px;
+
+    border-radius: 4px;
+    border: 1px solid rgba(142, 143, 153, 1)
+}
+
+.company-link .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 104px;
+    height: 56px;
+
 }
 
 
@@ -490,8 +551,6 @@ header {
 .filter-nav .item {
     margin: 0 12px;
 }
-
-
 
 .filter-nav button {
     font-size: 16px;
@@ -547,12 +606,16 @@ header {
 
 .portfolio-list .text {
     color: #434455;
+    margin-bottom: 8px;
 }
 
 
 /* Footer */
 .footer {
+    max-width: 1440px;
     background-color: var(--title-text-color);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer .ntainerntainer {
