@@ -618,16 +618,18 @@ header {
     margin-right: auto;
 }
 
-.footer .ntainerntainer {
+.footer .container {
+    display: flex;
+    /* justify-content: space-between; */
     padding-top: 100px;
     padding-bottom: 100px;
 }
 
 .footer .content {
     width: 264px;
-    margin-right: auto;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    margin-right: 120px;
+    /* padding-top: 100px;
+    padding-bottom: 100px; */
 }
 
 .footer-text {
@@ -643,4 +645,27 @@ header {
 
 .footer .logo-span {
     color: #f4f4fd
+}
+
+.footer .social-links {
+    width: 208px;
+    display: flex;
+    margin-bottom: 0;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.footer .media-icons {
+    width: inherit;
+    justify-content: space-between;
+    display: flex;
+    padding-top: 0;
+}
+
+.footer .media-title {
+    width:inherit;
+    font-weight: 500;
+    color: var(--primery-white-color);
+    margin-top: 0;
+    margin-bottom: 16px; 
 }
